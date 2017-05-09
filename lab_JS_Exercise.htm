@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Exercises</title>
+	
+<script>
+
+function Button1_onclick() {
+
+	txt1.value = getLine(1, "*");
+	
+	txt2.value = getLine(2, "*");
+	
+	txt3.value = getLine(3, "*");
+		
+	txt4.value = getLine(4, "*");
+			
+	txt5.value = getLine(5, "*");
+}
+
+function getLine(count, what) {
+	var line = "";
+	for (var i = 1; i <= count; i++) {
+		line = line + what;
+	}
+	return line;
+}
+
+</script>
+
+
+</head>
+<body>
+ 		<br><br>
+	<input type="button" id="Button1" name="Button1"   
+		value="2. 點我一下，執行 JavaScript" onclick="Button1_onclick()">
+	<br>
+	txt1:
+	<input type="text" id="txt1" name="txt1" value="World" PlaceHolder="Keyin something" size="20">
+<br>
+	txt2:
+    <INPUT type="text" id="txt2"  name="txt2" value="Result" size="20">
+    	<br>
+	txt3:
+    <INPUT type="text" id="txt3"  name="txt3" value="Result" size="20">
+    	<br>
+	txt4:
+    <INPUT type="text" id="txt4"  name="txt4" value="Result" size="20">
+    	<br>
+	txt5:
+    <INPUT type="text" id="txt5"  name="txt5" value="Result" size="20">
+    <br>
+    <div id="debug"></div>
+</body>
+</html>
+
